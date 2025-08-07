@@ -1055,4 +1055,22 @@ textarea.contact-input {
   .copyright,
   .footer-list { margin-inline: 0; }
 
+  .cv-dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.6) !important; /* Semi-transparent WHITE background */
+  backdrop-filter: blur(8px) !important;                  /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(8px) !important;          /* For Safari compatibility */
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;        /* Subtle dark border */
+}
+
+/* Style for the links (SDE, Analyst, etc.) inside the dropdown */
+.cv-dropdown-menu a {
+  color: #212529 !important; /* Very dark (almost black) text color */
+  font-weight: 600 !important;
+}
+
+/* Style for when you hover over a link */
+.cv-dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 1) !important; /* Make it fully white on hover */
+  color: #000000 !important;                            /* Make text fully black on hover */
+}
 }

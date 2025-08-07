@@ -88,3 +88,46 @@ Ionicon
 --transition-2: 0.25s ease;
 --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 ```
+
+
+/* --- Final Dropdown Styles for Click --- */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default, JS will control this */
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  padding: 5px 0;
+  list-style: none;
+
+  background-color: #ffffff; /* Solid white background */
+  min-width: 250px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar, .header, .parent-container {
+  overflow: visible !important;
+  z-index: 1;
+}
+
+/* --- Forceful Dropdown Fix --- */
+
+/* Target all potential parent containers of the dropdown */
+.header, 
+.header .container, 
+.navbar, 
+.navbar-list {
+  overflow: visible !important;
+}
+
+/* Ensure the header itself is high in the stacking order */
+.header {
+  z-index: 1000;
+}
